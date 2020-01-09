@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" dir="ltr" ng-app="application" ng-controller="mainCtrl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETWORK</title>
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/my.js"></script>
+    <script src="./assets/js/forms.js"></script>
+    
+    <link href="./assets/css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    
+    <!-- controller-->
+    <script src="./assets/controller/mainCtrl.js"></script>
+    <script src="./assets/controller/networkListCtrl.js"></script>
+    <script src="./assets/controller/networSettingCtrl.js"></script>
+    <!-- controller-->
+    
+</head>
+
+<body class="bkWrap">
+   
+    <!--<div class="cssLoader" style="display: none;">-->
+    <div class="cssLoader" ng-show="loaderFlag">
+        <div class="csscssload-load-frame">
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+        </div>
+        <div class="loaderTxt">Please Wait</div>
+    </div>
+    <!--<section class="loader" style="display: none;">-->
+    <section class="loader" style="display: none;">
+        <!-- the component -->
+        <ul class="bokeh">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="loaderTxt">Please Wait</div>
+    </section>
+    
+    <div class="grid-frame vertical">
+
+        <zf-notification-set id="main-notifications" class="notificationsDefault"></zf-notification-set>
+        
+        <div class="grid-block align-center">
+            
+            <div ui-view class="small-12 medium-10 large-8 xlarge-8 grid-content ui-view-content" style="overflow-x: hidden;" >
+
+            </div>
+        
+        </div>
+        
+        <div zf-modal="" id="dialogAlarm" overlay="true" overlay-close="false" class="tiny dialog dialogAlarm" animation-in="slideInDown" animation-out="hingeOutFromMiddleY">
+            <div class="grid-block blockAlarm">
+                <div class="titleInner"><span class="icon" data-icon="&#xe015;"></span>&nbsp;پیام سیستم </div>
+            </div>
+            <div class="grid-block blockAlarmContent">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                </div>
+            <div class="grid-block align-center">
+                <div class="small-12 medium-12 large-12 xlarge-12 grid-content" style="padding: 4px 0;">
+                    <a zf-close="" class="btnAlarmExtend"><span class="icon" data-icon="&#xe036;"></span></a>
+                </div>
+            </div>
+        </div>
+        <div zf-modal="" id="dialogModal" overlay="true" overlay-close="false" class="tiny dialog" animation-in="slideInDown" animation-out="hingeOutFromMiddleY">
+            <div class="grid-block wrap blockTitleModal"> <!-- row blockTitleSection -->
+            <div class="small-12 medium-12 large-12 xlarge-12 grid-content">
+                آیا این کار انجام شود؟
+            </div>
+            </div> <!-- row blockTitleSection End -->
+
+            <div class="grid-block align-center" style="padding: 10px 0;">
+                <div class="small-6 medium-6 large-6 xlarge-6 grid-content">
+                    <a zf-close="" class="btnUnLock"><span class="icon" data-icon="&#xe042;"></span> تایید </a>
+                </div>
+                <div class="small-6 medium-6 large-6 xlarge-6 grid-content">
+                    <a zf-close="" class="btnLock"><span class="icon" data-icon="&#xe036;"></span> انصراف </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<div class="grid-block align-center">
+    <div class="small-12 medium-12 large-12 xlarge-12 grid-content">
+
+        <div class="grid-block pageHeader">
+            <div class="small-12 medium-12 large-12 xlarge-12 grid-content">
+                <div class="grid-block title">
+                    <div class="small-12 medium-12 large-4 xlarge-4 grid-content pageTitle">
+                        <span class="">{{networksInf.msg}}</span>
+                    </div>
+                    <div class="small-12 medium-12 large-8 xlarge-8 grid-content">
+                        <div class="grid-block align-right formPlaceHeaderBtn">
+                            <a class="small-12 medium-6 large-2 xlarge-2 grid-content btnDefault" ng-click="load()">
+                                <span class="icon" data-icon="&#xe00a;"></span>Refresh
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-block formPlace">
+
+            <div class="small-12 medium-12 large-12 xlarge-12 grid-content">
+                <div class="grid-block formPlaceAdd">
+                    <div class="small-12 medium-12 large-12 xlarge-12 grid-content">
+
+                        <div class="grid-block gridComp">
+                            <!-- gridComp -->
+
+                            <div class="small-12 medium-12 large-12 xlarge-12 grid-content gridCompBlock">
+                                <!-- gridCompBlock -->
+
+                                <ul id="gridComponent" class="gridCompList">
+                                    <!-- gridCompList -->
+
+
+                                    <li class="row" ng-repeat='networkItem in networksInf.networks' id="{{networkItem.mac}}" 
+                                       connect-holder>
+
+                                        <div class="col10">
+                                            <div class="cell cellBtnAction">
+                                                <a class="btnActionDetails {{networkItem.conCls}}"><span class="icon" data-icon="&#xe09f;" ng-click="disconnect()"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="col10">
+                                            <div class="cell cellBtnAction">
+                                                <a class="btnActionDetails iconNetworkSetting"><span class="icon" data-icon="&#xe35f;"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="col15">
+                                            <div class="cell">
+                                                <div class="colChannel">{{networkItem.signal_level}}</div>
+                                            </div>
+                                        </div>
+                                        <div class="col15">
+                                            <div class="cell">
+                                                <div class="colChannel">{{networkItem.channel}}</div>
+                                            </div>
+                                        </div>
+                                        <div class="col50">
+                                            <div class="cell">
+                                                <div class="colName">{{networkItem.ssid}}</div>
+                                                <div class="colDesc">
+                                                    <span>MAC Address</span>
+                                                    <span>{{networkItem.mac}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                                <!-- /gridCompList -->
+
+                            </div>
+                            <!-- /gridCompBlock -->
+
+                        </div>
+                        <!-- /gridComp -->
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

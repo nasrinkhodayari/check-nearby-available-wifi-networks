@@ -1,0 +1,21 @@
+{
+  "name": "wifi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-wifi-scanner": "^1.0.0",
+    "pug": "^2.0.0-beta5",
+    "underscore": "^1.8.3",
+    "util": "^0.10.3",
+    "wifi-control": "^2.0.0",
+    "wireless": "^0.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

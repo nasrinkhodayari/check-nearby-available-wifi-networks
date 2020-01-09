@@ -1,0 +1,16 @@
+# Logs and databases #
+######################
+
+
+# OS generated files #
+######################
+
+
+# Grunt generated files #
+######################
+node_modules/
+
+# IDE generated files #
+######################
+.vscode
+.idea

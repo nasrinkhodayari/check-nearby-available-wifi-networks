@@ -1,0 +1,1 @@
+var foundationRoutes = [{"name":"networkSetting","url":"/networkSetting","controller":"networkSettingCtrl","path":"templates/networkSetting.html"},{"name":"networkList","url":"/","controller":"networkListCtrl","path":"templates/networkList.html"}]; 
