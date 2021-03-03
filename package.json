@@ -6,7 +6,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "node-wifi-scanner": "^1.0.0",
-    "pug": "^2.0.0-beta5",
+    "pug": "^3.0.1",
     "sync-exec": "^0.6.2",
     "underscore": "^1.8.3",
     "util": "^0.10.3",
